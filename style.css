@@ -1,31 +1,134 @@
+@font-face {
+    font-family: 'Supreme Spike';
+    src: url('assets/fonts/SupremeSpike.otf') format('opentype');
+}
+
 body {text-align: center;}
 
-body {background-color: #060c27;}
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(2, 62, 138) 3%, rgb(0, 12, 85) 38%, rgb(2, 62, 138) 68%, rgb(0, 12, 85) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
 
-h1 {color: #223e91;
-    font-size: 100px; 
-    font-family: 'Arial', sans-serif; 
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgba(51, 89, 204, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+h1 {
+    color: #bdc3d4;
+    letter-spacing: 8px;
+    font-size: 100px;
+    font-family: 'Supreme Spike', sans-serif;
     margin-top: 130px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 p {color: #ffffff; 
     font-size: 25px; 
     font-family: 'Arial', sans-serif; 
     margin-bottom: 40px;}
 
-input[type="text"] {width: 600px; 
-    padding: 10px; 
-    font-size: 16px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    margin-bottom: 20px;
-    margin-top: 50px;}
+h2 {color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 15px; 
+    font-family: 'Arial', sans-serif; 
+    margin-top: 120px;
+    margin-bottom:7px;}
 
-button {background-color: #304d9d; 
+.category-btn {
+    background-color: #0c1a40;
+    border-radius: 40px; 
     color: white; 
-    padding: 15px 32px; 
+    margin-top: 20px;
+    padding: 10px 20px; 
+    font-size: 16px;}
+
+.search-container { 
+    margin-bottom: 20px;
+    margin-top: 20px;}
+
+    #game-input {
+    background-color: #edeef7;
+    color: #000000;
+    width: 800px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;}
+
+#recommend-btn {background-color: #1e273f;
+    font-family: 'Supreme Spike', sans-serif;
+    letter-spacing: 2px; 
+    color: #ffffff; 
+    padding: 20px 40px; 
     font-size: 16px; 
     border: none; 
-    border-radius: 5px; 
+    border-radius: 15px; 
     cursor: pointer; 
-    box-shadow: 0 4px #1a2e6c;}
+    box-shadow: 0 4px #1a2e6c; }
+
+#recommend-btn:hover {background-color: #2c3961;}
+#recommend-btn:active {background-color: #2c3961; 
+    box-shadow: 0 2px #1a2e6c; 
+    transform: translateY(2px);}
+   
