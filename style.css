@@ -3,6 +3,10 @@
     src: url('assets/fonts/SupremeSpike.otf') format('opentype');
 }
 
+* {
+    user-select: none;
+}
+
 body {text-align: center;}
 
 body {
@@ -75,13 +79,92 @@ body {
     }
 }
 
-h1 {
-    color: #bdc3d4;
-    letter-spacing: 8px;
-    font-size: 100px;
+.logo {
+    margin: 0;
+    font-size: 50px;
+    color: #ffffff;
+    letter-spacing: 4px;
     font-family: 'Supreme Spike', sans-serif;
-    margin-top: 90px;
-    margin-bottom: 20px;
+
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #ffffff;
+    text-shadow: 0 0 25px #5b8cff;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+
+    background: rgba(0, 0, 40, 0.5);
+    backdrop-filter: blur(10px);
+
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Supreme Spike', sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+
+    padding: 10px 18px;
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(70, 90, 200, 0.4);
+    box-shadow: 0 0 15px #3b6cff;
+
+    transform: translateY(-2px);
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Supreme Spike', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px rgba(80, 120, 255, 0.6);
+}
+
+.hero-description {
+    color: #bdbdbd;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    margin: 0;
 }
 
 h2 {
