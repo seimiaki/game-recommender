@@ -9,7 +9,7 @@ body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: linear-gradient(315deg, rgb(2, 62, 138) 3%, rgb(0, 12, 85) 38%, rgb(2, 62, 138) 68%, rgb(0, 12, 85) 98%);
+    background: linear-gradient(315deg, rgb(1, 10, 23) 3%, rgb(0, 12, 85) 38%, rgb(7, 22, 42) 68%, rgb(4, 11, 61) 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ body {
 }
 
 .wave {
-    background: rgba(51, 89, 204, 0.25);
+    background: rgba(23, 40, 90, 0.25);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
     width: 200%;
@@ -123,7 +123,16 @@ h2 {
     padding: 10px 20px; 
     font-size: 16px;}
 
+.category-btn:hover {
+    background-color: #304d9d;
+}
 
+.selected {
+    background-color: #304d9d;
+    border-color: #6b8cff;
+
+    box-shadow: 0 0 15px #304d9d;
+}
 
 #game-input {
     width: 800px;
@@ -139,7 +148,7 @@ h2 {
 }
 
 #game-input:hover {
-    box-shadow: 0 0 15px #3b82f6;
+    box-shadow: 0 0 15px #16386f;
     transition: 0.3s;
 }
 
@@ -151,8 +160,8 @@ h2 {
     font-size: 16px; 
     border: none; 
     border-radius: 15px; 
-    cursor: pointer; 
-    box-shadow: 0 4px #1a2e6c;
+    cursor: crosshair; 
+    box-shadow: 0 4px #0a122a;
     margin-top: 40px; 
 }
 
