@@ -292,3 +292,128 @@ h2 {
 #modal.hidden {
     display: none;
 }
+
+#trending-games {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.game-row {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: visible;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.game-row::-webkit-scrollbar {
+    display: none;
+}
+
+    .game-card {
+    width: 180px;
+    height: 260px;
+
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    transition:
+        width 0.4s ease,
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+    flex-shrink: 0;
+    cursor: pointer;
+    background: #111;
+}
+
+.game-card:hover {
+    width: 460px;
+    z-index: 100;
+    transform: translateY(-10px);
+    box-shadow:
+        0 15px 40px rgba(60, 100, 255, 0.6);
+}
+
+.game-poster {
+    width: 180px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    transition: transform 0.4s ease;
+}
+
+.game-card:hover .game-poster {
+    transform: scale(1.05);
+}
+
+.game-info {
+    width: 0;
+    opacity: 0;
+    padding: 25px 0;
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071229,
+            #112d70,
+            #1e49a9
+        );
+    transition:
+        width 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.4s ease;
+
+    overflow: hidden;
+}
+
+.game-card:hover .game-info {
+    width: 280px;
+    opacity: 1;
+    padding: 25px;
+}
+
+.game-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.genre {
+    color: #a6b7ff;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.favorite-btn,
+.visit-btn {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    transition: 0.3s;
+}
+
+.favorite-btn:hover,
+.visit-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
