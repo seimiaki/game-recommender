@@ -13,11 +13,8 @@ button.addEventListener("click", function() {
 });
 
 closeButton.addEventListener("click", function() {
-
     const card = document.querySelector(".game-result");
-
     card.classList.add("closing");
-
     setTimeout(function() {
         modal.classList.add("hidden");
         card.classList.remove("closing");
