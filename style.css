@@ -300,13 +300,11 @@ h2 {
 
 .game-row {
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    padding: 35px 15px;
 
     overflow-x: auto;
     overflow-y: visible;
-
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .game-row::-webkit-scrollbar {
@@ -314,8 +312,8 @@ h2 {
 }
 
     .game-card {
-    width: 180px;
-    height: 260px;
+    width: 230px;
+    height: 330px;
 
     display: flex;
     position: relative;
@@ -333,7 +331,7 @@ h2 {
 }
 
 .game-card:hover {
-    width: 460px;
+    width: 620px;
     z-index: 100;
     transform: translateY(-10px);
     box-shadow:
@@ -341,7 +339,7 @@ h2 {
 }
 
 .game-poster {
-    width: 180px;
+    width: 230px;
     height: 100%;
     object-fit: cover;
     flex-shrink: 0;
@@ -374,20 +372,20 @@ h2 {
 }
 
 .game-card:hover .game-info {
-    width: 280px;
+    width: 390px;
     opacity: 1;
     padding: 25px;
 }
 
 .game-info h3 {
-    font-size: 22px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 .genre {
     color: #a6b7ff;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 19px;
 }
 
 .description {
@@ -398,7 +396,9 @@ h2 {
 
 .buttons {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .favorite-btn,
@@ -410,6 +410,7 @@ h2 {
     background: rgba(255,255,255,0.15);
     color: white;
     transition: 0.3s;
+    width: 120px;
 }
 
 .favorite-btn:hover,
