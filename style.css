@@ -293,9 +293,54 @@ h2 {
     display: none;
 }
 
-#trending-games {
+.discover-title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.discover-title h1 {
+    font-family: 'Supreme Spike', sans-serif;
+    font-size: 60px;
+    color: #e9e4e4;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.discover-title p {
+    font-size: 18px;
+    color:#9fa8c5;
+    letter-spacing: 1px;
+}
+
+#trending-games h2{
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Supreme Spike', sans-serif;
+}
+
+#new-releases h2{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Supreme Spike', sans-serif;
+}
+
+#most-played h2{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Supreme Spike', sans-serif;
 }
 
 .game-row {
@@ -305,6 +350,9 @@ h2 {
 
     overflow-x: auto;
     overflow-y: visible;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .game-row::-webkit-scrollbar {
@@ -328,6 +376,7 @@ h2 {
     flex-shrink: 0;
     cursor: pointer;
     background: #111;
+    scroll-snap-align: start;
 }
 
 .game-card:hover {
