@@ -4,6 +4,39 @@ const modal = document.getElementById("modal");
 const closeButton = document.getElementById("close-btn");
 const categoryButtons = document.querySelectorAll(".category-btn");
 
+const navbar = document.querySelector(".navbar");
+
+const startButton = document.getElementById("start-exploring");
+const finder = document.querySelector(".finder-container");
+const overlay = document.querySelector(".finder-overlay");
+
+startButton.addEventListener("click", () => {
+    finder.classList.add("active");
+});
+
+startButton.addEventListener("click", () => {
+    finder.classList.add("active");
+    overlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+const minimizeButton = document.getElementById("minimize-finder");
+
+minimizeButton.addEventListener("click", () => {
+    finder.classList.remove("active");
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("no-scroll");
+});
+
 button.addEventListener("click", function(){
     clickSound.currentTime = 0; 
     clickSound.play();

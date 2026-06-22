@@ -6,35 +6,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="bg-blur blur-blue"></div>
+<div class="bg-blur blur-purple"></div>
+
    <nav class="navbar">
 
-    <div class="nav-left">
-        <a href="#">Home</a>
+<h1 class="logo">NEXTPLAY</h1>
+
+<div class="nav-links">
+        <a href="#">NOVA</a>
         <a href="#discover-games">Discover</a>
-    </div>
-
-    <h1 class="logo">NEXTPLAY</h1>
-
-    <div class="nav-right">
-        <a href="#">Favorites</a>
+  
+        <a href="#">Home</a>
         <a href="#">Profile</a>
-    </div>
+</div>
 
 </nav>
 
-    <section class="hero">
+   <section class="hero">
 
-    <h1 class="hero-title">
-        Find Your Next Favorite Game
-    </h1>
+    <div class="hero-image">
+        <!-- Later your 3D image or game artwork goes here -->
+         🎮
+    </div>
 
-    <p class="hero-description">
-        Discover worlds, adventures, and stories tailored to your gaming taste.
+    <h1>DISCOVER YOUR NEXT ADVENTURE</h1>
+
+    <p>
+        Find the perfect game tailored to your taste.
+        Explore worlds, stories, and experiences made for you.
     </p>
+
+    <button class="start-btn" id="start-exploring">
+        Start Exploring
+    </button>
 
 </section>
 
-    <div class="welcome-card">
+<div class="finder-overlay"></div>
+<div class="finder-container">
+
+    <div class="finder-card">
+        <button id="minimize-finder">—</button>
         <h2>Hello, Player.</h2>
         <p id="description">What game are you looking for today?</p>
     
@@ -64,18 +78,18 @@
         <button id="favorite-btn">❤️ Add to Favorites</button>
     </div>
 </div>
+</div>
 
-<section class="discover-title">
-    <div id="discover-games">
-        <h1>DISCOVER</h1>
-        <p>Explore trending titles, new releases, and the world's most played games.</p>
-    </div>
+<section class="discover-section">
+    <h2>DISCOVER</h2>
+    <p>Find your next adventure</p>
+    <div class="discover-divider"></div>
 </section>
 
 <section class="discover">
 
     <div id="trending-games">
-        <h2>🔥Trending Right Now</h2>
+        <h2>Trending Right Now</h2>
     </div>
 
     <div class="game-row">
@@ -180,7 +194,7 @@
     </div>
 
  <div id="new-releases">
-        <h2>🆕New Releases</h2>
+        <h2>New Releases</h2>
     </div>
 
 <div class="game-row">
@@ -197,7 +211,7 @@
 </section>
 
 <div id="most-played">
-        <h2>🎮Most Played</h2>
+        <h2>Most Played</h2>
     </div>
 
 <div class="game-row">
